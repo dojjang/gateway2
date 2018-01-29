@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 //요청에 대한 라우팅을 다루는 필터이다. Apache httpclient를 사용하여 정해진 Url로 보낼수 있고, Neflix Ribbon을 사용하여 동적으로 라우팅 할 수도 있다.
 
 @RestController
-@RibbonClient(name = "cslb-server")
+@RibbonClient(name = "microservice")
 public class RouteFilter extends ZuulFilter {
 
     @Override
